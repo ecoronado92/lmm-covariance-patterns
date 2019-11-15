@@ -39,7 +39,7 @@ ui <- fluidPage(
       # Choose dataset (ONLY WORKS WITH RDS FILES!! add option + file to current directory)
       selectInput(inputId = "dataset",
                   label = "Choose a dataset:",
-                  choices = c("","srrs2","nels")),
+                  choices = c("srrs2","nels")),
       
       uiOutput("state"),    # If srrs2, this get loaded (required)
       uiOutput("response"), # select response var
